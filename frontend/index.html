@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BacklogOS — Show less. Start faster. Skip strategically.</title>
+    <meta name="description" content="BacklogOS clears your backlog with you — Top 3 daily focus, Lecture Skip Manager, AI assistant." />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              bg: '#0F0B17', card: '#1A1525', border: '#2A2238',
+              fg: '#F5F3FA', muted: '#8B82A0',
+              primary: '#A855F7', primaryGlow: '#C084FC',
+              success: '#34D399', warning: '#FBBF24', danger: '#F87171'
+            },
+            backgroundImage: {
+              'gradient-primary': 'linear-gradient(135deg, #A855F7, #C084FC)',
+              'gradient-bg': 'radial-gradient(ellipse 80% 60% at 50% 0%, #2A1B40 0%, #0F0B17 70%)'
+            },
+            boxShadow: {
+              glow: '0 10px 40px -10px rgba(168, 85, 247, 0.45)',
+              card: '0 4px 24px -8px rgba(0,0,0,0.5)'
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body { background: radial-gradient(ellipse 80% 60% at 50% 0%, #2A1B40 0%, #0F0B17 70%); background-attachment: fixed; color: #F5F3FA; font-family: 'Inter', system-ui, sans-serif; }
+      .text-gradient-primary { background: linear-gradient(135deg, #A855F7, #C084FC); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
